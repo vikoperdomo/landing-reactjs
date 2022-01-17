@@ -1,0 +1,22 @@
+@import "../../assets/scss/default/variables";
+
+.customize-control {
+  border-radius: 4px;
+  border-color: $border-color !important;
+}
+.card-title {
+  h5 {
+    $bodyFont: "Poppins", sans-serif;
+  }
+}
+.customize-placeholder {
+  opacity: 0.8;
+  font-family: $font-1 !important;
+}
+/*working only in mobile portrait device*/
+@media only screen and (max-width: 767px) {
+  .wrap-form-row {
+    display: grid;
+    grid-gap: 10px;
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../assets/scss/default/variables";
+@import "../../assets/scss/default/animations";
+svg {
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  &.circle {
+    -webkit-animation: dash 0.9s ease-in-out;
+    animation: dash 0.9s ease-in-out;
+  }
+  &.line {
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash 0.9s 0.35s ease-in-out forwards;
+    animation: dash 0.9s 0.35s ease-in-out forwards;
+  }
+  &.check {
+    stroke-dashoffset: -100;
+    -webkit-animation: dash-check 0.9s 0.35s ease-in-out forwards;
+    animation: dash-check 0.9s 0.35s ease-in-out forwards;
+  }
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  &.success {
+    font-family: "Poppins", sans-serif;
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,74 @@
+/*====================
+	Version: 1.0
+======================*/
+
+/**************************************************************
+
+	STYLESHEET INDEXING
+	|
+	|
+	|___ Default Styles
+	|	|___ variables
+	|	|___ mixins
+	|	|___ reset
+	|	|___ typography
+	|	|___ animations
+	|	|___ shortcode
+	|
+	|
+	|___Elements Styles
+	|	|___ Button
+	|	|___ brand
+	|	|___ contact
+	|	|___ about-us
+	|	|___ 404
+	|
+	|___Components Styles
+	|	|___ typography
+	|
+	|	|___ Color Variation
+	|	|
+	|	|___ color-2
+	|	|___ font-variation
+	|	|___ preview
+	|	|___ responsive
+	|
+	|___ END STYLESHEET INDEXING
+
+***************************************************************/
+
+
+/*===================================
+    Default Styles
+====================================*/
+@import 'default/variables';
+@import 'default/mixins';
+@import 'default/reset';
+@import 'default/typography';
+@import 'default/animations';
+@import 'default/shortcode';
+
+
+/*====================================
+	Elements Styles
+=====================================*/
+@import 'elements/button';
+@import 'elements/brand';
+@import 'elements/contact';
+@import 'elements/about';
+@import 'elements/404';
+
+
+/*================================
+	Components Style
+=================================*/
+@import 'components/typography';
+
+
+/*================================
+	Color Variation
+=================================*/
+@import 'color/color-2';
+@import 'color/font-variation';
+@import 'color/preview';
+@import 'color/responsive';

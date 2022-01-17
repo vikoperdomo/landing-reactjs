@@ -1,0 +1,14 @@
+@import "../../assets/scss/default/variables";
+.content-checkbox {
+  display: grid;
+  grid-template-columns: 18px auto;
+  grid-gap: 10px;
+  font-family: $font-1;
+  opacity: 0.8;
+  padding-right: 10px;
+
+  .input-checkbox {
+    height: 20px;
+    margin-top: 3px;
+  }
+}

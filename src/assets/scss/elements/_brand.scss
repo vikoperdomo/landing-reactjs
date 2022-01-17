@@ -1,0 +1,256 @@
+/* ======================
+    Brand Area
+==========================*/
+
+.frisson-brand-area {
+  &.bg-shape {
+    //background-image: url(../../img/slider/revolution/slider-4.png);
+    background-repeat: no-repeat;
+    background-position: top 80px right;
+    //position: absolute;
+    //top: 50%;
+    //left: 50%;
+    //transform: translate(-50%, -35%);
+    width: 100%;
+    margin: 25vh auto 0;
+    transform: translateY(-35%);
+    @media #{$sm-layout} {
+      width: 100%;
+      margin: 0;
+      transform: none;
+    }
+  }
+}
+
+.contact-form.contact-form--2 {
+  padding: 55px 70px 55px;
+  text-align: center;
+  //background-image: url(../../img/slider/revolution/slider-5.png);
+  background-repeat: no-repeat;
+  background-position: bottom -20px left -42px;
+}
+
+.contact-form.bg_color--1.contact-form--2.move-right.wow {
+  background-position: bottom 190px left 148px;
+}
+
+// Brand Default
+.brand-default {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+
+    a {
+      img {
+        -wefrit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        opacity: .3;
+        -wefrit-transition: all .3s linear;
+        transition: all .3s linear;
+        display: inline-block;
+      }
+
+      &:hover {
+        img {
+          -wefrit-filter: none;
+          filter: none;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &.brand-style--3 {
+    grid-template-columns: repeat(3, 1fr);
+    display: -ms-grid;
+    display: grid;
+
+  }
+
+  &.brand-style--2 {
+    grid-template-columns: repeat(3, 1fr);
+    display: -ms-grid;
+    display: grid;
+    @media #{$large-mobile} {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .brand {
+      position: relative;
+      display: -wefrit-box;
+      display: -wefrit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -wefrit-box-align: center;
+      -wefrit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -wefrit-box-pack: center;
+      -wefrit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 15px;
+      min-height: 200px;
+
+      &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        left: -1px;
+        top: -1px;
+        right: 0;
+        bottom: 0;
+        border: 1px solid #eee;
+        pointer-events: none;
+      }
+    }
+
+    &.no-border {
+      .brand {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // Navigation & Pagination
+  .swiper {
+    &-pagination {
+      margin-top: 50px;
+    }
+
+    &-next, &-prev {
+      border: none;
+      font-size: 30px;
+      color: $headings-color;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: -25px;
+
+      &:hover {
+        color: $theme-color;
+      }
+    }
+
+    &-prev {
+      left: -70px;
+
+      @media #{$md-layout} {
+        left: 0;
+      }
+
+      @media #{$sm-layout} {
+        left: 0;
+      }
+    }
+
+    &-next {
+      right: -70px;
+
+
+      @media #{$md-layout} {
+        right: 0;
+      }
+
+      @media #{$sm-layout} {
+        right: 0;
+      }
+    }
+  }
+}
+
+
+// Social Media client
+.social-client {
+  grid-template-columns: repeat(4, 1fr);
+  display: -ms-grid;
+  display: grid;
+
+  @media #{$sm-layout} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .client-grid {
+    .grid-inner {
+      position: relative;
+      display: -wefrit-box;
+      display: -wefrit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -wefrit-box-align: center;
+      -wefrit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -wefrit-box-pack: center;
+      -wefrit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 15px;
+      min-height: 115px;
+      height: 100%;
+
+      .inner {
+        a {
+          -wefrit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+          transition: all .3s cubic-bezier(.645, .045, .355, 1);
+
+          img {
+            -wefrit-transition: all .3s linear;
+            transition: all .3s linear;
+            height: auto;
+            max-width: 100%;
+          }
+        }
+
+        &:hover {
+          a {
+            img {
+              -wefrit-transform: translateY(-5px);
+              -ms-transform: translateY(-5px);
+              transform: translateY(-5px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Brnad Dots
+.swiper-pagination {
+  &-bullets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      background: #d8d8d8;
+      border-radius: 100%;
+      border: 0;
+      cursor: pointer;
+      display: block;
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      outline: none;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+
+      &.swiper-pagination-bullet-active {
+        background: $heading-color;
+      }
+    }
+  }
+}
+

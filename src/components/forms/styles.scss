@@ -1,0 +1,25 @@
+@import "../../assets/scss/default/variables";
+
+.error {
+  font-size: 12px;
+  color: $color-punch-approx;
+  margin-top: 5px;
+}
+.is-invalid {
+  border-color: $color-punch-approx !important;
+}
+.modify-input {
+  height: 42px !important;
+}
+
+.select__placeholder {
+  font-size: 14px;
+}
+.customize-placeholder,
+.is-selected {
+  font-family: $font-1 !important;
+}
+.text-input {
+  height: 44px !important;
+  font-family: $font-1 !important;
+}

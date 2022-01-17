@@ -1,0 +1,8 @@
+[
+  { "value": "artist", "label": "Artist" },
+  { "value": "manager", "label": "Manager" },
+  { "value": "producer", "label": "Producer" },
+  { "value": "recordLabel", "label": "Record Label" },
+  { "value": "non-musicIndustry", "label": "Non-Music Industry" },
+  { "value": "other", "label": "Other" }
+]

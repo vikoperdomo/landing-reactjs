@@ -1,0 +1,414 @@
+/*==========================
+Animation Css
+============================*/
+
+/* -----------------------------------
+    Custom Animation For All Page
+---------------------------------------*/
+
+@-wefrit-keyframes moveVertical {
+  to {
+    opacity: 1;
+    -wefrit-transform: translateY(0);
+  }
+}
+
+@keyframes moveVertical {
+  to {
+    opacity: 1;
+    -wefrit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-wefrit-keyframes moveHorizontal {
+  to {
+    -wefrit-transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveHorizontal {
+  to {
+    -wefrit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.move-up {
+  -wefrit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+
+  &.animated {
+    -wefrit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    -wefrit-animation: moveVertical 0.65s ease forwards;
+    animation: moveVertical 0.65s ease forwards;
+  }
+}
+
+.move-left {
+  -wefrit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+
+  &.animated {
+    -wefrit-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    transform: translateX(-100px);
+    -wefrit-animation: moveVertical 0.65s ease forwards;
+    animation: moveVertical 0.65s ease forwards;
+  }
+}
+
+.move-right {
+  -wefrit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+
+  &.animated {
+    -wefrit-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    transform: translateX(100px);
+    -wefrit-animation: moveVertical 0.65s ease backwards;
+    animation: moveVertical 0.65s ease backwards;
+  }
+}
+
+.move-up-x {
+  -wefrit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+
+  &.animated {
+    -wefrit-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    transform: translateX(100px);
+    -wefrit-animation: moveHorizontal 0.65s ease forwards;
+    animation: moveHorizontal 0.65s ease forwards;
+  }
+}
+
+/* ------------------------
+    Custom Animation 01
+----------------------------*/
+
+@-wefrit-keyframes headerSlideDown {
+  0% {
+    margin-top: -100px;
+  }
+
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes headerSlideDown {
+  0% {
+    margin-top: -100px;
+  }
+
+  to {
+    margin-top: 0;
+  }
+}
+
+/* --------------------------------------
+    Custom Hide Animation
+---------------------------------------*/
+
+@-wefrit-keyframes hide-animation {
+  0% {
+    -wefrit-transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    -wefrit-transform: translateY(60px);
+    opacity: 0;
+  }
+}
+
+@keyframes hide-animation {
+  0% {
+    -wefrit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    -wefrit-transform: translateY(60px);
+    transform: translateY(60px);
+    opacity: 0;
+  }
+}
+
+/* --------------------------------------
+    Custom Slide Show Animation
+---------------------------------------*/
+
+@-wefrit-keyframes show-animation {
+  0% {
+    -wefrit-transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    -wefrit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes show-animation {
+  0% {
+    -wefrit-transform: translateY(60px);
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    -wefrit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* --------------------------------------
+    Custom Slide Out To Right
+---------------------------------------*/
+
+@-wefrit-keyframes slide-out-to-right {
+  0% {
+    -wefrit-transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    -wefrit-transform: translateX(40px);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-out-to-right {
+  0% {
+    -wefrit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    -wefrit-transform: translateX(60px);
+    transform: translateX(60px);
+    opacity: 0;
+  }
+}
+
+/* --------------------------------------
+    Custom Slide Out To Left
+---------------------------------------*/
+
+@-wefrit-keyframes slide-in-to-left {
+  0% {
+    -wefrit-transform: translateX(60px);
+    opacity: 0;
+  }
+  to {
+    -wefrit-transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-to-left {
+  0% {
+    -wefrit-transform: translateX(40px);
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    -wefrit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ------------------------
+    frisson Hover Effect
+---------------------------*/
+
+.frisson-transition {
+  -wefrit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.fr-hover {
+  a {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    color: #999;
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 1px;
+      bottom: 0;
+      position: absolute;
+      left: auto;
+      right: 0;
+      z-index: -1;
+      -wefrit-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+      transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+      background: currentColor;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+
+  &.hover-text-dark {
+    a {
+      &:hover {
+      }
+    }
+  }
+}
+
+/* ------------------------
+    Separator Bounce
+---------------------------*/
+
+@-wefrit-keyframes separator-bounce {
+  0%,
+  80%,
+  to {
+    -wefrit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  40% {
+    -wefrit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes separator-bounce {
+  0%,
+  80%,
+  to {
+    -wefrit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  40% {
+    -wefrit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes spinner {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em,
+      0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em,
+      0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+@keyframes spinner {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em,
+      0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em,
+      0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
+
+@keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
