@@ -1,6 +1,5 @@
 # [React Landing Page Sign Up](https://github.com/vikoperdomo/landing-reactjs ) ![version](https://img.shields.io/badge/version-1.0.0-blue.svg) 
 
-![React - Landing Page Sign Up](src/assets/img/thumbnails/frisson-thumbnail.jpg)
 
 ## Landing Page to host two data forms FANS & ARTIST
 
